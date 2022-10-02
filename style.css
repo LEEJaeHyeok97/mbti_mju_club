@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(26, 29, 38);
+}
+
+#title, .start_title{
+    color: aquamarine;
+}
+
+.startBtn {
+    border: 3px solid aquamarine;
+    width: 300px;
+    height: 70px;
+    background-color: rgba(26, 29, 38, 0.5);
+    display: block;
+    color: white;
+    margin: auto;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 1s;
+
+    
+}
+
+@keyframes bdchange {
+    0%{border-color: aquamarine;}
+    25%{border-color: orange;}
+    50%{border-color: yellow;}
+    100%{border-color: green;}
+}
+
+.startBtn:hover {
+    animation-name: bdchange;
+    animation-fill-mode: backwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    color: aquamarine;
+    height: 100px;
+}
+
+#insta_img {
+    width: 20px;
+}
+
+.insta_link {
+    margin: auto;
+    margin-top: 300px;
+}
+
+.insta_text {
+    color: aqua;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    display: none;
+}
+
+.result {
+    display: none;
+}
+
+#img, #img2 {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.share {
+    margin: 0 auto;
+}
+
+
+.btn1 {
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    background-color: rgb(62, 62, 70);
+    color: white;
+    border: none;
+    font-weight: bold;
+
+}
+
+.btn1:hover {
+    background-color: rgb(62, 62, 70);
+    color: white;
+}
+
+.result_text {
+    color: rgb(233, 233, 233);
+}
+
+.result_top {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
